@@ -7,7 +7,7 @@
         "header header"
         "sidebar content"
         "footer footer";
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(
         to bottom,
         #002244 0%,
@@ -28,12 +28,40 @@ nav {
     position: relative;
 }
 
-nav > a {
-    position: absolute;
+/* ============= flipping coin START ============= */
+.slideshow {
+    position: relative;
     left: 50px;
-    top: 25px;
-    height: 30px;
+    top: 21px;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
 }
+
+.slideshow img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.img1 { animation-name: fadeA; }
+.img2 { animation-name: fadeB; }
+
+@keyframes fadeA {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+@keyframes fadeB {
+    0%, 50% { opacity: 0; }
+    51%, 100% { opacity: 1; }
+}
+/* ============= flipping coin END ============= */
 
 nav > input {
     position: absolute;
@@ -50,11 +78,13 @@ nav > input {
     height: 30px;
 }
 
-.user-button {
+.user-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
     position: absolute;
     right: 50px;
-    top: 25px;
-    height: 30px;
+    top: 22px;
 }
 
 nav > hr {
@@ -106,7 +136,7 @@ footer {
     - Imagens
     - Animação dos cards
     - Efeitos de luz
-    - Consertar o fade
+    - Consertar o fade                                          DONE ✔
     - Fonte
     - Deixar o site responsivo!! tem muita medida absoluta aqui, isso vai ser um problema! (eu acho)
 */
