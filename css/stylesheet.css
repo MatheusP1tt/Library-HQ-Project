@@ -36,6 +36,7 @@ nav {
     height: 40px;
     width: 40px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .slideshow img {
@@ -63,21 +64,47 @@ nav {
 }
 /* ============= flipping coin END ============= */
 
-nav > input {
+/* ============= Search bar START ============= */
+.search-bar {
     position: absolute;
-    right: 230px;
-    top: 25px;
-    width: 230px;
-    height: 30px;
+    right: 130px;
+    top: 19px;
+    width: 100%;
+    height: 40px;
+    max-width: 300px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
 }
 
-.search-button {
-    position: absolute;
-    right: 170px;
-    top: 25px;
-    height: 30px;
+.search-bar input {
+    background-color: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    color: #e4e3ec;
 }
 
+::placeholder {
+    color: #e4e3ec;
+}
+
+.search-bar button img {
+    width: 18px;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* ============= Search bar END ============= */
 .user-img {
     height: 35px;
     width: 35px;
@@ -85,6 +112,7 @@ nav > input {
     position: absolute;
     right: 50px;
     top: 22px;
+    cursor: pointer;
 }
 
 nav > hr {
