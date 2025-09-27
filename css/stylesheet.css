@@ -1,0 +1,112 @@
+/* macro page layout */
+.page-grid {
+    display: grid;
+    grid-template-rows: 80px 1fr 140px;
+    grid-template-columns: 260px 1fr;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #002244 0%,
+        #004488 50%,
+        #336699 100%
+    );
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation bar layout */
+nav {
+    grid-area: header;
+    background-color: #001a33;
+    position: relative;
+}
+
+nav > a {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    height: 30px;
+}
+
+nav > input {
+    position: absolute;
+    right: 230px;
+    top: 25px;
+    width: 230px;
+    height: 30px;
+}
+
+.search-button {
+    position: absolute;
+    right: 170px;
+    top: 25px;
+    height: 30px;
+}
+
+.user-button {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    height: 30px;
+}
+
+nav > hr {
+    position: absolute;
+    bottom: 0;
+    width: 1903px;
+    padding: 0;
+    margin: 0;
+}
+
+/* aside menu/filters layout */
+aside {
+    grid-area: sidebar;
+    position: relative;
+}
+
+aside > fieldset {
+    position: relative;
+    top: 83px;
+    left: 20px;
+}
+
+/* lib layout */
+section {
+    grid-area: content;
+}
+
+.grid-lib {
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
+    gap: 10px;
+    padding: 90px;
+}
+
+.card {
+    height: 290px;
+    width: 200px;
+}
+
+/* footer? layout */
+footer {
+    grid-area: footer;
+}
+
+
+/* CONSIDERAÇÕES: 
+
+    - Botões
+    - Imagens
+    - Animação dos cards
+    - Efeitos de luz
+    - Consertar o fade
+    - Fonte
+    - Deixar o site responsivo!! tem muita medida absoluta aqui, isso vai ser um problema! (eu acho)
+*/
