@@ -1,5 +1,12 @@
-let imprime = document.getElementsByClassName('user-img')[0]
+let userPic = document.getElementById('userImg')
 
-imprime.addEventListener("click", () => {
-    console.log('Hello World!')
+userPic.addEventListener("click", (e) => {
+    let dropdownMenu = document.getElementsByClassName('dropdown-user')[0]
+    
+    if(dropdownMenu.style.display == 'none') {
+        dropdownMenu.style.display = 'block'
+    }else{
+        dropdownMenu.style.display = 'none'
+    }
+    
 })

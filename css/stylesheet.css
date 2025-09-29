@@ -115,6 +115,41 @@ nav {
     cursor: pointer;
 }
 
+.dropdown-user {
+    background-color: lightblue;
+    position: absolute;
+    right: 40px;
+    top: 80px;
+    height: 250px;
+    width: 270px;
+    z-index: 1;
+    display: block;
+    /* essa linha pode ser meramente ilustrativa **lembrete pra verificar dps */
+    transition: transform 0.5s;
+}
+
+.dropdown-img {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.dropdown-option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+}
+
+.dropdown-option > p {
+    width: 100%;
+}
+
+.dropdown-option > span {
+    padding: 15px;
+}
+
 nav > hr {
     position: absolute;
     bottom: 0;
