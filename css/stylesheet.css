@@ -151,6 +151,9 @@ section {
     grid-template-columns: repeat(7, 200px);
     gap: 20px;
     padding: 90px 0px 90px 70px;
+    height: 1015px;
+    box-sizing: border-box;
+    overflow-y: auto;
 }
 
 .grid-lib > button {
